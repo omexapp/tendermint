@@ -193,7 +193,7 @@ func NewState(
 
 // SetLogger implements Service.
 func (cs *State) SetLogger(l log.Logger) {
-	track.l = l.With("module", "OKTracker")
+	track.l = l.With("module", "OMTracker")
 	cs.BaseService.Logger = l
 	cs.timeoutTicker.SetLogger(l)
 }
